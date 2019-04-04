@@ -10,7 +10,7 @@ void crearInforme(GrupoPersonas gp,char* fichero){ //*fichero = cadena de caract
 	fprintf(f,"%s \n %s","CENSO DE JOVENES","----------------\n");
 	int i;
 	for(i=0;i<gp.numero;i++){
-		fprintf(f,"[Nombre: %s Edad: %i]\n",(gp.personas+i)->nombre,(gp.personas+i)->edad); //al tratarse de un array de punteros, el puntero indica al primer elemento del array y tendre que sumar 1 al mismo puntero
+		fprintf(f,"[Nombre: %s  Edad: %i]\n",(gp.personas+i)->nombre,(gp.personas+i)->edad); //al tratarse de un array de punteros, el puntero indica al primer elemento del array y tendre que sumar 1 al mismo puntero
 
 	}
 	fprintf(f,"Media: %.2f",gp.media);
